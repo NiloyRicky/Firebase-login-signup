@@ -27,7 +27,7 @@ function Signup() {
         const user = auth.currentUser;
 
         if (user) {
-            const url = 'http://localhost:3000/auth/signup';
+            const url = 'firebase-login-signup-plum.vercel.app/auth/signup';
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
