@@ -15,7 +15,7 @@ function Home() {
 
   const fetchUserDetails = async (email) => {
     try {
-      const response = await fetch('http://localhost:3000/auth/user', {
+      const response = await fetch('firebase-login-signup-plum.vercel.app/auth/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ function Home() {
       // Fetch the currently logged-in user email from Firebase
       const user = auth.currentUser;
       if (user) {
-        const response = await fetch('http://localhost:3000/auth/logout', {
+        const response = await fetch('firebase-login-signup-plum.vercel.app/auth/logout', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
