@@ -7,7 +7,7 @@ function Profile() {
 
     useEffect(() => {
         const fetchUserProfile = async () => {
-            const response = await fetch(`https://localhost:3000/auth/profile/${userId}`);
+            const response = await fetch(`firebase-login-signup-plum.vercel.app/auth/profile/${userId}`);
             const data = await response.json();
 
             if (data.success) {
