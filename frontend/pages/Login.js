@@ -32,7 +32,7 @@ try {
   
 
 
-  const url='http://localhost:3000/auth/login';
+  const url='firebase-login-signup-plum.vercel.app/auth/login';
   const response=await fetch(url,{ //two parameters in fetch keyword
     method:"POST",
     headers:{
