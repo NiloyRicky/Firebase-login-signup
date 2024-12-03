@@ -14,7 +14,9 @@ res.send("PONG")
 });
 app.use(bodyParser.json()); //Frontend se data lene k liye
 app.use(cors({
-    origin:"firebase-login-signup-2fm5-ha113me8a.vercel.app"
+    origin:"firebase-login-signup-2fm5-ha113me8a.vercel.app",
+    methods:["GET","POST"],
+    credentials:true,
 }));
 app.use("/auth",AuthRouter);
 
